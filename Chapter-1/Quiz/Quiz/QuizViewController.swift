@@ -20,7 +20,7 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var question:String  = questions[currentQuestionIndex] as! String
+        let question  = questions[currentQuestionIndex] as! String
         self.questionLabel.text = question
         // Do any additional setup after loading the view.
     }
@@ -31,29 +31,19 @@ class QuizViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     @IBAction func showQuestion() {
         currentQuestionIndex = currentQuestionIndex + 1
         if(currentQuestionIndex == questionCount) {
             currentQuestionIndex = 0
         }
         
-        var question:String  = questions[currentQuestionIndex] as! String
+        let question = questions[currentQuestionIndex] as! String
         self.questionLabel.text = question
         self.answerLabel.text = "???"
     }
     
     @IBAction func showAnswer() {
-        var answer:String = answers[currentQuestionIndex] as! String
+        let answer = answers[currentQuestionIndex] as! String
         self.answerLabel.text = answer
     }
 }
