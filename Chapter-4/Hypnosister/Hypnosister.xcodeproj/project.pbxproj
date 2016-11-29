@@ -12,6 +12,7 @@
 		0F79401C1DEC8C2000EFFC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F79401B1DEC8C2000EFFC03 /* Assets.xcassets */; };
 		0F79401F1DEC8C2000EFFC03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F79401D1DEC8C2000EFFC03 /* LaunchScreen.storyboard */; };
 		0F7940271DEC8C4B00EFFC03 /* HypnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7940261DEC8C4B00EFFC03 /* HypnosisView.swift */; };
+		0FAC1B841DEDCFF400DCB6CD /* adhi-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAC1B831DEDCFF400DCB6CD /* adhi-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0F79401E1DEC8C2000EFFC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F7940201DEC8C2000EFFC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F7940261DEC8C4B00EFFC03 /* HypnosisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosisView.swift; sourceTree = "<group>"; };
+		0FAC1B831DEDCFF400DCB6CD /* adhi-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "adhi-logo.png"; path = "../adhi-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0F7940191DEC8C2000EFFC03 /* Hypnosister-Prefix.pch */,
 				0F79401B1DEC8C2000EFFC03 /* Assets.xcassets */,
 				0F79401D1DEC8C2000EFFC03 /* LaunchScreen.storyboard */,
+				0FAC1B831DEDCFF400DCB6CD /* adhi-logo.png */,
 				0F7940201DEC8C2000EFFC03 /* Info.plist */,
 			);
 			path = Hypnosister;
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FAC1B841DEDCFF400DCB6CD /* adhi-logo.png in Resources */,
 				0F79401F1DEC8C2000EFFC03 /* LaunchScreen.storyboard in Resources */,
 				0F79401C1DEC8C2000EFFC03 /* Assets.xcassets in Resources */,
 				0F79401A1DEC8C2000EFFC03 /* Hypnosister-Prefix.pch in Resources */,
@@ -292,6 +296,7 @@
 				0F7940251DEC8C2000EFFC03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,7 +10,6 @@ import UIKit
 
 class HypnosisView: UIView {
 
-   
     override func draw(_ rect: CGRect) {
         let bounds = self.bounds
      
@@ -29,7 +28,8 @@ class HypnosisView: UIView {
             path.addArc(withCenter: center, radius: currentRadius, startAngle: 0, endAngle: CGFloat(endAngle), clockwise: true)
 
         }
-                path.lineWidth = 10
+        
+        path.lineWidth = 10
         UIColor.lightGray.setStroke()
         path.stroke()
         
