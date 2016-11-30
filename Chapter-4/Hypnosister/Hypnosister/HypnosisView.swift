@@ -9,8 +9,10 @@
 import UIKit
 
 class HypnosisView: UIView {
-
+    
     override func draw(_ rect: CGRect) {
+        self.isUserInteractionEnabled = true
+        self.backgroundColor = UIColor.white
         let bounds = self.bounds
      
         var center = CGPoint()
@@ -30,9 +32,22 @@ class HypnosisView: UIView {
         }
         
         path.lineWidth = 10
-        UIColor.lightGray.setStroke()
+        UIColor.darkGray.setStroke()
         path.stroke()
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        NSLog("touched")
+        self.setNeedsDisplay()
+    }
  
+    func getRandomColor()-> UIColor {
+        let red = Float(Float(arc4random() % 100) / 100.0)
+        let green = Float(Float(arc4random() % 100) / 100.0)
+        let blue = Float(Float(arc4random() % 100) / 100.0)
+        
+        let randomColor = UIColor.init(colorLiteralRed: red, green: green, blue: blue, alpha: 0.1)
+        return randomColor
+    }
 }

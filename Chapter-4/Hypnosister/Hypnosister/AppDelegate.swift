@@ -17,17 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let firstFrame = self.window?.bounds
-        let firstView = HypnosisView(frame: firstFrame!)
-        firstView.backgroundColor = UIColor.white
+        var screenRect = self.window?.bounds
+        var bigRect = screenRect
+        bigRect?.size.width *= 2.0
         
-        let logoImage = UIImage(named: "adhi-logo.png")
-        let logoImageView = UIImageView(image: logoImage)
-        logoImageView.frame = CGRect(x: 0, y: 0, width: 200, height: 150)
+        let scrollView = UIScrollView(frame: screenRect!)
+        self.window?.addSubview(scrollView)
+        
+        let hypnosisView = HypnosisView(frame: screenRect!)
+        scrollView.addSubview(hypnosisView)
+        
+        screenRect?.origin.x += (screenRect?.size.width)!;
+        let anotherView = HypnosisView(frame: screenRect!)
+        scrollView.addSubview(anotherView)
+        scrollView.contentSize = (bigRect?.size)!
+        scrollView.isPagingEnabled = true
         
         self.window?.rootViewController = UIViewController()
-        self.window?.addSubview(firstView)
-        self.window?.addSubview(logoImageView)
         self.window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()
         
