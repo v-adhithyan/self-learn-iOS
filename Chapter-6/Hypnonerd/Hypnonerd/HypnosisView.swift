@@ -12,7 +12,7 @@ class HypnosisView: UIView {
     
     override func draw(_ rect: CGRect) {
         let bounds = self.bounds
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = UIColor.clear
         
         var center = CGPoint()
         center.x = (bounds.origin.x + bounds.size.width) / 2.0
@@ -31,7 +31,7 @@ class HypnosisView: UIView {
         }
         
         path.lineWidth = 10
-        let strokeColor = UIColor.white
+        UIColor.lightGray.setStroke()
         path.stroke()
         
     }

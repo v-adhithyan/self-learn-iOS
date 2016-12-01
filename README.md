@@ -13,4 +13,9 @@ Self teach iOS development using Big Nerd Raunch Guide
 ### HypnoNerd
 <img src="Screenshots/Chapter61.jpg" height="400px">
 <img src="Screenshots/Chapter62.jpg" height="400px">
+
+## Chapter 7
+##### Extension of previous chapter. Add a textfield and sprinkle the input around the view
+<img src="Screenshots/Chapter7.jpg" height="400px">
+
 ## Learning in progress. Will be updated periodically.
