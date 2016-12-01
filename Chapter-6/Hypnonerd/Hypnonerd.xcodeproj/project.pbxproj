@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0B0E101DEF2F230046B45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0B0E0F1DEF2F230046B45F /* AppDelegate.swift */; };
+		0F0B0E121DEF2F230046B45F /* Hypnonerd-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 0F0B0E111DEF2F230046B45F /* Hypnonerd-Prefix.pch */; };
+		0F0B0E141DEF2F230046B45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0B0E131DEF2F230046B45F /* Assets.xcassets */; };
+		0F0B0E171DEF2F240046B45F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0B0E151DEF2F240046B45F /* LaunchScreen.storyboard */; };
+		0F0B0E1F1DEF2F4C0046B45F /* HypnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0B0E1E1DEF2F4C0046B45F /* HypnosisView.swift */; };
+		0F53B7751DEFD16900FEA9C0 /* HypnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F53B7741DEFD16900FEA9C0 /* HypnosisViewController.swift */; };
+		0F53B7771DEFD2CB00FEA9C0 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F53B7761DEFD2CB00FEA9C0 /* ReminderViewController.swift */; };
+		0F53B7791DEFD5C100FEA9C0 /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F53B7781DEFD5C100FEA9C0 /* ReminderViewController.xib */; };
+		0F53B77E1DEFE20400FEA9C0 /* Hypno.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F53B77A1DEFE20400FEA9C0 /* Hypno.png */; };
+		0F53B77F1DEFE20400FEA9C0 /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F53B77B1DEFE20400FEA9C0 /* Hypno@2x.png */; };
+		0F53B7801DEFE20400FEA9C0 /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F53B77C1DEFE20400FEA9C0 /* Time.png */; };
+		0F53B7811DEFE20400FEA9C0 /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F53B77D1DEFE20400FEA9C0 /* Time@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F0B0E0C1DEF2F230046B45F /* Hypnonerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnonerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F0B0E0F1DEF2F230046B45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0F0B0E111DEF2F230046B45F /* Hypnonerd-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hypnonerd-Prefix.pch"; sourceTree = "<group>"; };
+		0F0B0E131DEF2F230046B45F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F0B0E161DEF2F240046B45F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0F0B0E181DEF2F240046B45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F0B0E1E1DEF2F4C0046B45F /* HypnosisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosisView.swift; sourceTree = "<group>"; };
+		0F53B7741DEFD16900FEA9C0 /* HypnosisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosisViewController.swift; sourceTree = "<group>"; };
+		0F53B7761DEFD2CB00FEA9C0 /* ReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		0F53B7781DEFD5C100FEA9C0 /* ReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
+		0F53B77A1DEFE20400FEA9C0 /* Hypno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hypno.png; sourceTree = "<group>"; };
+		0F53B77B1DEFE20400FEA9C0 /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hypno@2x.png"; sourceTree = "<group>"; };
+		0F53B77C1DEFE20400FEA9C0 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
+		0F53B77D1DEFE20400FEA9C0 /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F0B0E091DEF2F230046B45F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F0B0E031DEF2F230046B45F = {
+			isa = PBXGroup;
+			children = (
+				0F0B0E0E1DEF2F230046B45F /* Hypnonerd */,
+				0F0B0E0D1DEF2F230046B45F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F0B0E0D1DEF2F230046B45F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F0B0E0C1DEF2F230046B45F /* Hypnonerd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F0B0E0E1DEF2F230046B45F /* Hypnonerd */ = {
+			isa = PBXGroup;
+			children = (
+				0F0B0E0F1DEF2F230046B45F /* AppDelegate.swift */,
+				0F53B7761DEFD2CB00FEA9C0 /* ReminderViewController.swift */,
+				0F53B7781DEFD5C100FEA9C0 /* ReminderViewController.xib */,
+				0F53B7741DEFD16900FEA9C0 /* HypnosisViewController.swift */,
+				0F0B0E1E1DEF2F4C0046B45F /* HypnosisView.swift */,
+				0F0B0E111DEF2F230046B45F /* Hypnonerd-Prefix.pch */,
+				0F0B0E131DEF2F230046B45F /* Assets.xcassets */,
+				0F0B0E151DEF2F240046B45F /* LaunchScreen.storyboard */,
+				0F53B77A1DEFE20400FEA9C0 /* Hypno.png */,
+				0F53B77B1DEFE20400FEA9C0 /* Hypno@2x.png */,
+				0F53B77C1DEFE20400FEA9C0 /* Time.png */,
+				0F53B77D1DEFE20400FEA9C0 /* Time@2x.png */,
+				0F0B0E181DEF2F240046B45F /* Info.plist */,
+			);
+			path = Hypnonerd;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F0B0E0B1DEF2F230046B45F /* Hypnonerd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F0B0E1B1DEF2F240046B45F /* Build configuration list for PBXNativeTarget "Hypnonerd" */;
+			buildPhases = (
+				0F0B0E081DEF2F230046B45F /* Sources */,
+				0F0B0E091DEF2F230046B45F /* Frameworks */,
+				0F0B0E0A1DEF2F230046B45F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hypnonerd;
+			productName = Hypnonerd;
+			productReference = 0F0B0E0C1DEF2F230046B45F /* Hypnonerd.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F0B0E041DEF2F230046B45F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Adhithyan Vijayakumar";
+				TargetAttributes = {
+					0F0B0E0B1DEF2F230046B45F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = UQ4ZGJ76Q2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0F0B0E071DEF2F230046B45F /* Build configuration list for PBXProject "Hypnonerd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0F0B0E031DEF2F230046B45F;
+			productRefGroup = 0F0B0E0D1DEF2F230046B45F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F0B0E0B1DEF2F230046B45F /* Hypnonerd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F0B0E0A1DEF2F230046B45F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F53B7791DEFD5C100FEA9C0 /* ReminderViewController.xib in Resources */,
+				0F0B0E171DEF2F240046B45F /* LaunchScreen.storyboard in Resources */,
+				0F53B7801DEFE20400FEA9C0 /* Time.png in Resources */,
+				0F0B0E141DEF2F230046B45F /* Assets.xcassets in Resources */,
+				0F53B77F1DEFE20400FEA9C0 /* Hypno@2x.png in Resources */,
+				0F0B0E121DEF2F230046B45F /* Hypnonerd-Prefix.pch in Resources */,
+				0F53B77E1DEFE20400FEA9C0 /* Hypno.png in Resources */,
+				0F53B7811DEFE20400FEA9C0 /* Time@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F0B0E081DEF2F230046B45F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F53B7771DEFD2CB00FEA9C0 /* ReminderViewController.swift in Sources */,
+				0F53B7751DEFD16900FEA9C0 /* HypnosisViewController.swift in Sources */,
+				0F0B0E101DEF2F230046B45F /* AppDelegate.swift in Sources */,
+				0F0B0E1F1DEF2F4C0046B45F /* HypnosisView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F0B0E151DEF2F240046B45F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F0B0E161DEF2F240046B45F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F0B0E191DEF2F240046B45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0F0B0E1A1DEF2F240046B45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F0B0E1C1DEF2F240046B45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UQ4ZGJ76Q2;
+				INFOPLIST_FILE = Hypnonerd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adhithyan.Hypnonerd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0F0B0E1D1DEF2F240046B45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UQ4ZGJ76Q2;
+				INFOPLIST_FILE = Hypnonerd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adhithyan.Hypnonerd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F0B0E071DEF2F230046B45F /* Build configuration list for PBXProject "Hypnonerd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F0B0E191DEF2F240046B45F /* Debug */,
+				0F0B0E1A1DEF2F240046B45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F0B0E1B1DEF2F240046B45F /* Build configuration list for PBXNativeTarget "Hypnonerd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F0B0E1C1DEF2F240046B45F /* Debug */,
+				0F0B0E1D1DEF2F240046B45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F0B0E041DEF2F230046B45F /* Project object */;
+}

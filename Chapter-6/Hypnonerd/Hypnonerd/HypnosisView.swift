@@ -11,14 +11,13 @@ import UIKit
 class HypnosisView: UIView {
     
     override func draw(_ rect: CGRect) {
-        self.isUserInteractionEnabled = true
-        self.backgroundColor = UIColor.white
         let bounds = self.bounds
-     
+        self.backgroundColor = UIColor.white
+        
         var center = CGPoint()
         center.x = (bounds.origin.x + bounds.size.width) / 2.0
         center.y = (bounds.origin.y + bounds.size.height) / 2.0
-     
+        
         let maxRadius = hypot(bounds.size.width, bounds.size.height) / 2.0
         
         let path = UIBezierPath()
@@ -28,11 +27,11 @@ class HypnosisView: UIView {
             //move to current centre before drawing circle
             path.move(to: CGPoint(x: center.x + currentRadius, y: center.y))
             path.addArc(withCenter: center, radius: currentRadius, startAngle: 0, endAngle: CGFloat(endAngle), clockwise: true)
-
+            
         }
         
         path.lineWidth = 10
-        UIColor.lightGray.setStroke()
+        let strokeColor = UIColor.white
         path.stroke()
         
     }

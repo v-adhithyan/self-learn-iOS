@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Hypnosister
+//  Hypnonerd
 //
-//  Created by Adhithyan Vijayakumar on 28/11/16.
+//  Created by Adhithyan Vijayakumar on 30/11/16.
 //  Copyright © 2016 Adhithyan Vijayakumar. All rights reserved.
 //
 
@@ -14,20 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let firstFrame = self.window?.bounds
-        let firstView = HypnosisView(frame: firstFrame!)
-        firstView.backgroundColor = UIColor.white
+        let hyponosisViewController = HypnosisViewController(nibName: nil, bundle: nil)
+    
+        let appBundle = Bundle.main
+        let reminderViewController = ReminderViewController(nibName: "ReminderViewController", bundle: appBundle)
         
-        /*let logoImage = UIImage(named: "adhi-logo.png")
-        let logoImageView = UIImageView(image: logoImage)
-        logoImageView.frame = CGRect(x: 0, y: 0, width: 200, height: 150)*/
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [hyponosisViewController, reminderViewController]
         
-        self.window?.rootViewController = UIViewController()
-        self.window?.addSubview(firstView)
-        //self.window?.addSubview(logoImageView)
+        self.window?.rootViewController = tabBarController
         self.window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()
         
