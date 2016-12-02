@@ -18,4 +18,8 @@ Self teach iOS development using Big Nerd Raunch Guide
 ##### Extension of previous chapter. Add a textfield and sprinkle the input around the view
 <img src="Screenshots/Chapter7.jpg" height="400px">
 
+## Chapter 8
+### Homepwner
+<img src="Screenshots/Chapter8.jpg" height="400px">
+
 ## Learning in progress. Will be updated periodically.
