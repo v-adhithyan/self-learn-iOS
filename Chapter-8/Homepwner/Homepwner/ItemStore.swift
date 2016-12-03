@@ -27,4 +27,9 @@ class ItemStore: NSObject {
         
         return item
     }
+    
+    func removeItem(item: BNRItem) {
+        self.privateArray.removeObject(identicalTo: item)
+    }
+    
 }

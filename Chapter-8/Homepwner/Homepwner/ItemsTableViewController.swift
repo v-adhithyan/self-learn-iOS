@@ -12,12 +12,14 @@ class ItemsTableViewController: UITableViewController {
     var itemStore: ItemStore
     let reuseIdentifier = "UITableViewCell"
     
+    @IBOutlet var headerView:UIView!
+    
     init() {
         self.itemStore = ItemStore()
         
-        for _ in stride(from: 1, to: 20, by: 1) {
+        /*for _ in stride(from: 1, to: 5, by: 1) {
             _ = itemStore.createItem()
-        }
+        }*/
         
         super.init(style: UITableViewStyle.plain)
         
@@ -31,6 +33,9 @@ class ItemsTableViewController: UITableViewController {
         super.viewDidLoad()
 
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
+        //let header = self.getHeaderView()
+        self.tableView.tableHeaderView = self.getHeaderView()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -68,6 +73,25 @@ class ItemsTableViewController: UITableViewController {
         return cell
     }
     
+    func getHeaderView()-> UIView {
+        let array = Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)
+        self.headerView = array?[0] as! UIView
+        
+        return headerView
+    }
+    
+    @IBAction func addNewItem() {
+        NSLog("Add New item")
+        
+        _ = itemStore.createItem()
+        let lastRow = itemStore.allItems().count - 1
+        let indexPath = NSIndexPath(row: lastRow, section: 0) as IndexPath
+        self.tableView.insertRows(at: [indexPath], with: UITableViewRowAnimation.top)
+    }
+    
+    @IBAction func toggleEditingMode() {
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -77,17 +101,21 @@ class ItemsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            let item = itemStore.allItems().object(at: indexPath.row) as! BNRItem
+            itemStore.removeItem(item: item)
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
+            
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

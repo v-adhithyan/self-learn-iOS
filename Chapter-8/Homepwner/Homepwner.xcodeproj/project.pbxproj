@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F8F9D521DF304DA003E2F78 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8F9D511DF304DA003E2F78 /* HeaderView.xib */; };
 		0FF9CA981DF075970011FDFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9CA971DF075970011FDFC /* AppDelegate.swift */; };
 		0FF9CA9A1DF075970011FDFC /* Homepwner-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 0FF9CA991DF075970011FDFC /* Homepwner-Prefix.pch */; };
 		0FF9CA9C1DF075970011FDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF9CA9B1DF075970011FDFC /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F8F9D511DF304DA003E2F78 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		0FF9CA941DF075970011FDFC /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF9CA971DF075970011FDFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FF9CA991DF075970011FDFC /* Homepwner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homepwner-Prefix.pch"; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				0FF9CA971DF075970011FDFC /* AppDelegate.swift */,
+				0F8F9D511DF304DA003E2F78 /* HeaderView.xib */,
 				0FF9CAA81DF077F50011FDFC /* ItemStore.swift */,
 				0FF9CAAA1DF079540011FDFC /* BNRItem.swift */,
 				0FF9CAA61DF0766F0011FDFC /* ItemsTableViewController.swift */,
@@ -133,6 +136,7 @@
 				0FF9CA9F1DF075970011FDFC /* LaunchScreen.storyboard in Resources */,
 				0FF9CA9C1DF075970011FDFC /* Assets.xcassets in Resources */,
 				0FF9CA9A1DF075970011FDFC /* Homepwner-Prefix.pch in Resources */,
+				0F8F9D521DF304DA003E2F78 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +304,7 @@
 				0FF9CAA51DF075970011FDFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
