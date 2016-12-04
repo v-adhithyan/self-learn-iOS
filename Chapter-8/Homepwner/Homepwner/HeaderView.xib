@@ -24,7 +24,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Edit"/>
                     <connections>
-                        <action selector="toggleEditingMode" destination="-1" eventType="touchUpInside" id="udL-Ig-xrV"/>
+                        <action selector="toggleEditingModeWithSender:" destination="-1" eventType="touchUpInside" id="Gav-W7-9ed"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndu-gG-bNw">

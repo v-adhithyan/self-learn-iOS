@@ -22,4 +22,9 @@ Self teach iOS development using Big Nerd Raunch Guide
 ### Homepwner
 <img src="Screenshots/Chapter8.jpg" height="400px">
 
+## Chapter 9
+### Homepwner - Add reorder, delete and insert new item functionalites
+<img src="Screenshots/Chapter91.jpg" height="400px">
+<img src="Screenshots/Chapter92.jpg" height="400px">
+<img src="Screenshots/Chapter93.jpg" height="400px">
 ## Learning in progress. Will be updated periodically.

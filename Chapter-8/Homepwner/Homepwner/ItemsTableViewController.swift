@@ -89,7 +89,15 @@ class ItemsTableViewController: UITableViewController {
         self.tableView.insertRows(at: [indexPath], with: UITableViewRowAnimation.top)
     }
     
-    @IBAction func toggleEditingMode() {
+    @IBAction func toggleEditingMode(sender: UIButton) {
+        
+        if self.isEditing {
+            sender.setTitle("Edit", for: UIControlState.normal)
+            self.setEditing(false, animated: true)
+        } else {
+            sender.setTitle("Done", for: UIControlState.normal)
+            self.setEditing(true, animated: true)
+        }
         
     }
 
@@ -117,12 +125,19 @@ class ItemsTableViewController: UITableViewController {
     }
     
 
-    /*
+    
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
+        if fromIndexPath.row != to.row {
+            let from = fromIndexPath.row
+            let item = itemStore.allItems().object(at: from) as! BNRItem
+            itemStore.removeItem(item: item)
+            
+            itemStore.addItem(item: item)
+        }
     }
-    */
+ 
 
     /*
     // Override to support conditional rearranging of the table view.

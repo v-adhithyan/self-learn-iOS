@@ -28,6 +28,10 @@ class ItemStore: NSObject {
         return item
     }
     
+    func addItem(item: BNRItem) {
+        self.privateArray.add(item)
+    }
+    
     func removeItem(item: BNRItem) {
         self.privateArray.removeObject(identicalTo: item)
     }
