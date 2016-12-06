@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F52BEB71DF6718400A7F56E /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F52BEB61DF6718400A7F56E /* ImageStore.swift */; };
 		0FF436831DF5A49A001E6386 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF436811DF5A49A001E6386 /* DetailViewController.swift */; };
 		0FF436841DF5A49A001E6386 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF436821DF5A49A001E6386 /* DetailViewController.xib */; };
 		0FF9CA981DF075970011FDFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9CA971DF075970011FDFC /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F52BEB61DF6718400A7F56E /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		0FF436811DF5A49A001E6386 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0FF436821DF5A49A001E6386 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		0FF9CA941DF075970011FDFC /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 		0FF9CA961DF075970011FDFC /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
+				0F52BEB61DF6718400A7F56E /* ImageStore.swift */,
 				0FF9CA971DF075970011FDFC /* AppDelegate.swift */,
 				0FF436811DF5A49A001E6386 /* DetailViewController.swift */,
 				0FF436821DF5A49A001E6386 /* DetailViewController.xib */,
@@ -155,6 +158,7 @@
 				0FF436831DF5A49A001E6386 /* DetailViewController.swift in Sources */,
 				0FF9CA981DF075970011FDFC /* AppDelegate.swift in Sources */,
 				0FF9CAA91DF077F50011FDFC /* ItemStore.swift in Sources */,
+				0F52BEB71DF6718400A7F56E /* ImageStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

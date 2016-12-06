@@ -33,6 +33,8 @@ class ItemStore: NSObject {
     }
     
     func removeItem(item: BNRItem) {
+        ImageStore.sharedStore.deleteObjectForKey(key: item.itemKey)
+        
         self.privateArray.removeObject(identicalTo: item)
     }
     

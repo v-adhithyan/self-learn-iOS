@@ -14,12 +14,14 @@ class BNRItem: NSObject {
     var serialNo: String = ""
     var dateCreated: NSDate
     var valueInDollars: Int = 0
+    var itemKey: String = ""
     
     init(itemName: String) {
         self.itemName = itemName
         self.serialNo = ""
         self.dateCreated = NSDate()
         self.valueInDollars = 0
+        self.itemKey = NSUUID().uuidString
     }
         
     init(itemName: String, serialNo: String, valueInDollars: Int) {
@@ -27,6 +29,7 @@ class BNRItem: NSObject {
         self.serialNo = serialNo
         self.dateCreated = NSDate()
         self.valueInDollars = valueInDollars
+        self.itemKey = NSUUID().uuidString
     }
     
     init(itemName: String, serialNo: String, dateCreated: NSDate, valueInDollars: Int) {
@@ -34,6 +37,7 @@ class BNRItem: NSObject {
         self.serialNo = serialNo
         self.dateCreated = dateCreated
         self.valueInDollars = valueInDollars
+        self.itemKey = NSUUID().uuidString
     }
     
     

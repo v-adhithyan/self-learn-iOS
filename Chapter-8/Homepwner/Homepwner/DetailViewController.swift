@@ -8,12 +8,13 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var serialField: UITextField!
     @IBOutlet weak var valueField: UITextField!
     
+    @IBOutlet weak var imageField: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     
     var item: BNRItem!
@@ -42,6 +43,13 @@ class DetailViewController: UIViewController {
         
         self.dateLabel.text = dateFormatter.string(from: item.dateCreated as Date)
         
+        let displayImage = ImageStore.sharedStore.imageForKey(key: item.itemKey)
+        
+        if displayImage != nil {
+                self.imageField.image = displayImage as! UIImage?
+        }
+        
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -58,6 +66,38 @@ class DetailViewController: UIViewController {
         self.navigationItem.title = item.itemName
     }
     
+    
+    @IBAction func takePicture(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+            
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+                imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+        } else {
+                imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        }
+            
+        imagePicker.delegate = self
+            self.present(imagePicker, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        self.imageField.image = image
+        
+        ImageStore.getSharedStore().setImage(image: image!, key: item.itemKey)
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    @IBAction func backgroundTapped(_ sender: Any) {
+        self.view.endEditing(true)
+    }
     /*
     // MARK: - Navigation
 
